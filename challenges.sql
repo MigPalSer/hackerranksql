@@ -14,3 +14,9 @@ SELECT * FROM CITY WHERE ID=1661;
 
 --https://www.hackerrank.com/challenges/japanese-cities-attributes/
 SELECT * FROM CITY WHERE COUNTRYCODE="JPN";
+
+--https://www.hackerrank.com/challenges/japanese-cities-name/problem
+SELECT NAME FROM CITY WHERE COUNTRYCODE="JPN";
+
+--https://www.hackerrank.com/challenges/weather-observation-station-1/problem
+SELECT CITY, STATE FROM STATION;
