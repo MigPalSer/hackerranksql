@@ -20,5 +20,9 @@ SELECT NAME FROM CITY WHERE COUNTRYCODE="JPN";
 
 --https://www.hackerrank.com/challenges/weather-observation-station-1/problem
 SELECT CITY, STATE FROM STATION;
+
 --https://www.hackerrank.com/challenges/name-of-employees/problem
 SELECT NAME FROM EMPLOYEE ORDER BY NAME;
+
+--https://www.hackerrank.com/challenges/weather-observation-station-3/problem
+SELECT DISTINCT CITY FROM STATION WHERE ID%2=0;
