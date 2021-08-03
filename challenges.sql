@@ -26,3 +26,6 @@ SELECT NAME FROM EMPLOYEE ORDER BY NAME;
 
 --https://www.hackerrank.com/challenges/weather-observation-station-3/problem
 SELECT DISTINCT CITY FROM STATION WHERE ID%2=0;
+
+--https://www.hackerrank.com/challenges/weather-observation-station-4/problem
+SELECT COUNT(CITY) - COUNT(DISTINCT CITY) FROM STATION;
