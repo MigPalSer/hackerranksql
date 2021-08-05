@@ -29,3 +29,7 @@ SELECT DISTINCT CITY FROM STATION WHERE ID%2=0;
 
 --https://www.hackerrank.com/challenges/weather-observation-station-4/problem
 SELECT COUNT(CITY) - COUNT(DISTINCT CITY) FROM STATION;
+
+--https://www.hackerrank.com/challenges/weather-observation-station-5/problem
+SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY), CITY LIMIT 1;
+SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY) DESC, CITY LIMIT 1;
