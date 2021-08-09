@@ -36,3 +36,6 @@ SELECT CITY, LENGTH(CITY) FROM STATION ORDER BY LENGTH(CITY) DESC, CITY LIMIT 1;
 
 --https://www.hackerrank.com/challenges/weather-observation-station-6/problem
 SELECT DISTINCT CITY FROM STATION WHERE CITY RLIKE '^[AEIOU]';
+
+--https://www.hackerrank.com/challenges/weather-observation-station-7/problem
+SELECT DISTINCT CITY FROM STATION WHERE CITY RLIKE '[aeiou]$';
