@@ -48,3 +48,6 @@ SELECT DISTINCT CITY FROM STATION WHERE CITY RLIKE '^[^AEIOU]';
 
 --https://www.hackerrank.com/challenges/weather-observation-station-10/problem
 SELECT DISTINCT CITY FROM STATION WHERE CITY RLIKE '[^aeiou]$';
+
+--https://www.hackerrank.com/challenges/weather-observation-station-11/problem
+SELECT DISTINCT CITY FROM STATION WHERE CITY RLIKE '^[^AEIOU]' OR CITY RLIKE '[^aeiou]$';
