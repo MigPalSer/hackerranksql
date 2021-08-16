@@ -54,3 +54,6 @@ SELECT DISTINCT CITY FROM STATION WHERE CITY RLIKE '^[^AEIOU]' OR CITY RLIKE '[^
 
 --https://www.hackerrank.com/challenges/weather-observation-station-12/problem
 SELECT DISTINCT CITY FROM STATION WHERE CITY RLIKE '^[^AEIOU]' AND CITY RLIKE '[^aeiou]$' ORDER BY CITY;
+
+--https://www.hackerrank.com/challenges/more-than-75-marks/problem
+SELECT NAME FROM STUDENTS WHERE MARKS > 75 ORDER BY SUBSTRING(NAME, -3), ID;
