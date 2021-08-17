@@ -57,3 +57,6 @@ SELECT DISTINCT CITY FROM STATION WHERE CITY RLIKE '^[^AEIOU]' AND CITY RLIKE '[
 
 --https://www.hackerrank.com/challenges/more-than-75-marks/problem
 SELECT NAME FROM STUDENTS WHERE MARKS > 75 ORDER BY SUBSTRING(NAME, -3), ID;
+
+--https://www.hackerrank.com/challenges/salary-of-employees/problem
+SELECT NAME FROM EMPLOYEE WHERE SALARY>2000 AND MONTHS<10 ORDER BY EMPLOYEE_ID;
