@@ -60,3 +60,16 @@ SELECT NAME FROM STUDENTS WHERE MARKS > 75 ORDER BY SUBSTRING(NAME, -3), ID;
 
 --https://www.hackerrank.com/challenges/salary-of-employees/problem
 SELECT NAME FROM EMPLOYEE WHERE SALARY>2000 AND MONTHS<10 ORDER BY EMPLOYEE_ID;
+
+--https://www.hackerrank.com/challenges/what-type-of-triangle/problem
+SELECT 
+CASE
+WHEN (A+B)<=C OR (A+C)<=B OR (B+C)<=C THEN 'Not A Triangle'
+ELSE
+CASE 
+WHEN A=B AND B=C THEN 'Equilateral'
+WHEN A=B OR B=C OR A=C THEN 'Isosceles'
+ELSE  'Scalene'
+END
+END
+FROM TRIANGLES;
