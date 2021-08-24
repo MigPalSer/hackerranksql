@@ -86,3 +86,6 @@ SELECT CONCAT ('There are a total of ', COUNT(OCCUPATION),' ', LOWER(OCCUPATION)
 
 --https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/problem
 SELECT COUNT(NAME) FROM CITY WHERE POPULATION>100000;
+
+--https://www.hackerrank.com/challenges/revising-aggregations-sum/problem
+SELECT SUM(POPULATION) FROM CITY WHERE DISTRICT='California';
