@@ -89,3 +89,6 @@ SELECT COUNT(NAME) FROM CITY WHERE POPULATION>100000;
 
 --https://www.hackerrank.com/challenges/revising-aggregations-sum/problem
 SELECT SUM(POPULATION) FROM CITY WHERE DISTRICT='California';
+
+--https://www.hackerrank.com/challenges/revising-aggregations-the-average-function/problem
+SELECT AVG(POPULATION) FROM CITY WHERE DISTRICT='California';
