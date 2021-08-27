@@ -95,3 +95,6 @@ SELECT AVG(POPULATION) FROM CITY WHERE DISTRICT='California';
 
 --https://www.hackerrank.com/challenges/average-population/problem
 SELECT ROUND(AVG(POPULATION)) FROM CITY;
+
+--https://www.hackerrank.com/challenges/japan-population/problem
+SELECT SUM(POPULATION) FROM CITY WHERE COUNTRYCODE='JPN';
