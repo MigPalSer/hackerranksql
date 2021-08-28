@@ -98,3 +98,6 @@ SELECT ROUND(AVG(POPULATION)) FROM CITY;
 
 --https://www.hackerrank.com/challenges/japan-population/problem
 SELECT SUM(POPULATION) FROM CITY WHERE COUNTRYCODE='JPN';
+
+--https://www.hackerrank.com/challenges/population-density-difference/problem
+SELECT MAX(POPULATION)-MIN(POPULATION) FROM CITY;
