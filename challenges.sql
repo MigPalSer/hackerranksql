@@ -101,3 +101,6 @@ SELECT SUM(POPULATION) FROM CITY WHERE COUNTRYCODE='JPN';
 
 --https://www.hackerrank.com/challenges/population-density-difference/problem
 SELECT MAX(POPULATION)-MIN(POPULATION) FROM CITY;
+
+--https://www.hackerrank.com/challenges/the-blunder/problem
+SELECT CEIL(AVG(SALARY)-AVG(REPLACE(SALARY, "0", ""))) FROM EMPLOYEES;
