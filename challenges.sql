@@ -104,3 +104,6 @@ SELECT MAX(POPULATION)-MIN(POPULATION) FROM CITY;
 
 --https://www.hackerrank.com/challenges/the-blunder/problem
 SELECT CEIL(AVG(SALARY)-AVG(REPLACE(SALARY, "0", ""))) FROM EMPLOYEES;
+
+--https://www.hackerrank.com/challenges/earnings-of-employees/problem
+SELECT MAX(SALARY*MONTHS), COUNT(SALARY*MONTHS) FROM EMPLOYEE GROUP BY SALARY*MONTHS ORDER BY SALARY*MONTHS DESC LIMIT 1; 
