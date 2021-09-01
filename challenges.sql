@@ -107,3 +107,6 @@ SELECT CEIL(AVG(SALARY)-AVG(REPLACE(SALARY, "0", ""))) FROM EMPLOYEES;
 
 --https://www.hackerrank.com/challenges/earnings-of-employees/problem
 SELECT MAX(SALARY*MONTHS), COUNT(SALARY*MONTHS) FROM EMPLOYEE GROUP BY SALARY*MONTHS ORDER BY SALARY*MONTHS DESC LIMIT 1; 
+
+--https://www.hackerrank.com/challenges/weather-observation-station-2/problem
+SELECT ROUND(SUM(LAT_N), 2), ROUND(SUM(LONG_W), 2) FROM STATION;
