@@ -110,3 +110,6 @@ SELECT MAX(SALARY*MONTHS), COUNT(SALARY*MONTHS) FROM EMPLOYEE GROUP BY SALARY*MO
 
 --https://www.hackerrank.com/challenges/weather-observation-station-2/problem
 SELECT ROUND(SUM(LAT_N), 2), ROUND(SUM(LONG_W), 2) FROM STATION;
+
+--https://www.hackerrank.com/challenges/weather-observation-station-13/problem
+SELECT TRUNCATE(SUM(LAT_N), 4) FROM STATION WHERE LAT_N>38.7880 AND LAT_N<137.2345; 
