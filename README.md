@@ -1,2 +1,2 @@
 # hackerranksql
-Hackerrank challenges for SQL
+Hackerrank challenges for SQL with MySQL.
