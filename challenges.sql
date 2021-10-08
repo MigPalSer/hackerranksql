@@ -132,6 +132,7 @@ SELECT ROUND(LAT_N, 4) FROM STATION WHERE LAT_N>38.7780 ORDER BY LAT_N ASC LIMIT
 --https://www.hackerrank.com/challenges/weather-observation-station-18/problem
 SELECT ROUND(ABS(MAX(LAT_N)-MIN(LAT_N))+ABS(MAX(LONG_W)-MIN(LONG_W)),4) FROM STATION;
 
---
+--https://www.hackerrank.com/challenges/weather-observation-station-19/problem
+SELECT ROUND(SQRT(POWER(MAX(LAT_N)-MIN(LAT_N),2)+POWER(MAX(LONG_W)-MIN(LONG_W),2)),4) FROM STATION;
 
 --
